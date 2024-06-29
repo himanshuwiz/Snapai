@@ -52,19 +52,21 @@ const Photogallery = () => {
     };
 
     return (
-      <form onSubmit={handleSubmit}>
-        <input type="file" onChange={handleFileChange} />
-        <button type="submit">Upload</button>
+      <form onSubmit={handleSubmit} className="mb-4">
+        <input type="file" onChange={handleFileChange} className="mb-2" />
+        <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded">
+          Upload
+        </button>
       </form>
     );
   };
 
   const ImageGallery = ({ images }) => {
     return (
-      <div className="image-gallery">
+      <div className="image-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((image, index) => (
           <div key={index} className="image-item">
-            <img src={image.url} alt={`Image ${index}`} />
+            <img src={image.url} alt={`Image ${index}`} className="w-full h-auto" />
           </div>
         ))}
       </div>
@@ -72,8 +74,8 @@ const Photogallery = () => {
   };
 
   return (
-    <div className="photo-gallery">
-      <h1>Photo Gallery</h1>
+    <div className="photo-gallery p-4 mt-16">
+      <h1 className="text-2xl font-bold mb-4">Photo Gallery</h1>
       <UploadForm />
       <ImageGallery images={images} />
     </div>

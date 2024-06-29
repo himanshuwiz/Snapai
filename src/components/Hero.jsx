@@ -147,7 +147,11 @@ const Hero = () => {
             <p className="text-lg text-gray-300 mb-4">
               Basic features to get you started.
             </p>
-            <p className="text-2xl font-bold mb-8">1.99€ monthly</p>
+            <p className="text-2xl font-bold mb-8">$1.99 monthly</p>
+            <p className="text-2xl font-bold mb-8">$19.99 anually</p>
+            
+
+
             <p className=" font-bold mb-8">200GB</p>
             <Link
               to="/signup"
@@ -161,7 +165,8 @@ const Hero = () => {
             <p className="text-lg text-gray-300 mb-4">
               Basic features to get you started.
             </p>
-            <p className="text-2xl font-bold mb-8">3.99€ monthly</p>
+            <p className="text-2xl font-bold mb-8">$3.99 monthly</p>
+            <p className="text-2xl font-bold mb-8">$39.99 anually</p>
             <p className=" font-bold mb-8">500GB</p>
             <Link
               to="/signup"
@@ -175,7 +180,8 @@ const Hero = () => {
             <p className="text-lg text-gray-300 mb-4">
               Basic features to get you started.
             </p>
-            <p className="text-2xl font-bold mb-8">8.99€ monthly</p>
+            <p className="text-2xl font-bold mb-8">$8.99 monthly</p>
+            <p className="text-2xl font-bold mb-8">$89.99 anually</p>
             <p className=" font-bold mb-8">2TB</p>
             <Link
               to="/signup"
@@ -189,7 +195,8 @@ const Hero = () => {
             <p className="text-lg text-gray-300 mb-4">
               Basic features to get you started.
             </p>
-            <p className="text-2xl font-bold mb-8">39.99€ monthly</p>
+            <p className="text-2xl font-bold mb-8">$39.99 monthly</p>
+            <p className="text-2xl font-bold mb-8">$399.99 anually</p>
             <p className=" font-bold mb-8">10TB</p>
             <Link
               to="/signup"

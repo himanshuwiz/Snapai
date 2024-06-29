@@ -20,21 +20,21 @@ const About = () => {
       name: "Ishan Grover",
       image: "/ishan.jpg", // Replace with actual image path
       education: "B.Tech in Computer Science",
-      techStack: "Rust,C++",
+      techStack: "Rust ,C++",
       bio: "Ishan  is proficient in backend development and database management. He has expertise in Python, focusing on scalable and secure web applications.",
     },
     {
       name: "Aktri",
       image: "/aktri.jpg", // Replace with actual image path
       education: "B.Tech ",
-      techStack: "lorem ispum",
+      techStack: "Java Developer",
       bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit, justo quis vehicula tempus",
     },
     {
       name: "Naina",
       image: "/naina.jpg", // Replace with actual image path
       education: "B.Tech",
-      techStack: "lorem ispum",
+      techStack: "Web Developer",
       bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit, justo quis vehicula tempus",
     },
   ];
