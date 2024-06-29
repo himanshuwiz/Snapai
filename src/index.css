@@ -103,3 +103,21 @@
   display: block;
   border-radius: 8px;
 }
+
+.upload-form {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.upload-button {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.file-input {
+  display: block;
+  width: 100%;
+}
