@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaHome,
   FaImages,
@@ -6,21 +7,12 @@ import {
   FaInfoCircle,
   FaEnvelope,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
-const Header = () => {
+const Footer = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-30 bg-white backdrop-filter backdrop-blur-lg bg-opacity-15">
-      <div className="max-w-5xl mx-auto px-4">
+    <footer className="relative bottom-0 z-10 bg-white backdrop-filter backdrop-filter-lg bg-opacity-10 ">
+      <div className="max-w-5xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-4">
-            {/* <img src={Logo} alt="SnapAI Logo" className="h-8 w-8 mr-2" /> */}
-            <Link to="/">
-              <span className="text-2xl text-gray-500 font-semibold">
-                SnapAI
-              </span>
-            </Link>
-          </div>
           <div className="flex items-center space-x-6">
             <Link to="/" title="Home" className="flex items-center p-2">
               <FaHome />
@@ -49,23 +41,14 @@ const Header = () => {
             >
               <FaEnvelope />
             </Link>
-            <Link
-              to="/login"
-              className="btn-neutral bg-gray-200 text-gray py-2 px-4 rounded-lg transform transition-transform hover:scale-105 bg-opacity-5"
-            >
-              Login
-            </Link>
-            <Link
-              to="/signup"
-              className="btn-neutral bg-gray-200 text-gray py-2 px-4 rounded-lg transform transition-transform hover:scale-105 bg-opacity-5"
-            >
-              Signup
-            </Link>
+          </div>
+          <div className="text-gray-500">
+            &copy; {new Date().getFullYear()} SnapAI. All rights reserved.
           </div>
         </div>
       </div>
-    </nav>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;
